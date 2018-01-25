@@ -1,10 +1,13 @@
 {
-  "name": "SigisBot",
-  "version": "1.0.0",
-  "description": "My own Discord bot",
+  "name": "Test",
+  "description": "Test",
+  "version": "0.0.0",
   "main": "bot.js",
-  "author": "Wiktor Brzeziński",
+  "scripts": {
+    "start": "node bot.js"
+  },
   "dependencies": {
-    "winston": "^2.4.0"
+    "discord.js": "11.1.0",
+    "request": "2.81.0"
   }
 }
