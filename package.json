@@ -1,0 +1,10 @@
+{
+  "name": "SigisBot",
+  "version": "1.0.0",
+  "description": "My own Discord bot",
+  "main": "bot.js",
+  "author": "Wiktor Brzeziński",
+  "dependencies": {
+    "winston": "^2.4.0"
+  }
+}
