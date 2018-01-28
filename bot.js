@@ -26,9 +26,6 @@ client.on("message", (message) => {
   } else
   if (message.content.startsWith(config.prefix + "foo")) { //Answer to a 'foo' command
     message.channel.send("bar!");
-  } else
-  if (message.content.startsWith(config.prefix + "custombuild")) {
-    message.channel.send("${message.author.username}, you piece of incompetent shit heheheh");
   }
 });
 
