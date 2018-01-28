@@ -1,5 +1,6 @@
 const Discord = require("discord.js");
 const client = new Discord.Client();
+const config = require("./config.json");
 
 // Set the prefix
 let prefix = "!";
@@ -16,4 +17,4 @@ client.on("message", (message) => {
 });
 
 // THIS  MUST  BE  THIS  WAY, pls no touchy-touchy
-client.login(process.env.BOT_TOKEN);
+client.login(config.token);
