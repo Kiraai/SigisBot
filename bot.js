@@ -20,7 +20,7 @@ client.on("message", (message) => {
 }
    
   if (message.content.startsWith(config.prefix + "ping")) { //Answer to a 'ping' command
-    message.channel.send("pong!");
+    message.channel.send("pong! muthafucker");
   } else
   if (message.content.startsWith(config.prefix + "foo")) { //Answer to a 'foo' command
     message.channel.send("bar!");
