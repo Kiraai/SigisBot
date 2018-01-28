@@ -2,6 +2,9 @@ const Discord = require("discord.js");
 const client = new Discord.Client();
 const fs = require("fs")
 const config = require("./config.json");
+const args = message.content.slice(prefix.length).trim().split(/ +/g);
+const command = args.shift().toLowerCase();
+
 
 client.on("message", (message) => {
   
@@ -26,7 +29,7 @@ client.on("message", (message) => {
     message.channel.send("bar!");
   } else
   if (message.content.startsWith(config.prefix + "custombuild")) {
-    message.reply(', you incompetent, useless shit. Go get some proper build first!')
+    message.reply('you incompetent, useless shit. Go get some proper build first!')
   }
 });
 
