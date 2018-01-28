@@ -28,7 +28,7 @@ client.on("message", (message) => {
     message.channel.send("bar!");
   } else
   if (message.content.startsWith(config.prefix + "custombuild")) {
-    message.channel.send("${message.author.username}, you piece of incompetent shit");
+    message.channel.send("${message.author.username}, you piece of incompetent shit heheheh");
   }
 });
 
