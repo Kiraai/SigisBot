@@ -1,4 +1,4 @@
 {
-  "token": "insert-bot-token-here",
+  "token": "process.env.BOT_TOKEN",
   "prefix": "&"
 }
