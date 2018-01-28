@@ -4,8 +4,10 @@ const fs = require("fs")
 const config = require("./config.json");
 
 client.on("message", (message) => {
-  // Exit and stop if the prefix is not there or if user is a bot
-  if (!message.content.startsWith(config.prefix) || message.author.bot) return;
+  
+  if(message.author.id !== config.ownerID) return; // Exit and stop if some else than ME tries to run a bot ;)
+  
+  if (!message.content.startsWith(config.prefix) || message.author.bot) return; // Exit and stop if the prefix is not there or if user is a bot
 
   if(message.content.startsWith(config.prefix + "prefix")) {
   // Gets the prefix from the command (eg. "!prefix +" it will take the "+" from it)
@@ -17,10 +19,10 @@ client.on("message", (message) => {
   fs.writeFile("./config.json", JSON.stringify(config), (err) => console.error);
 }
    
-  if (message.content.startsWith(config.prefix + "ping")) {
+  if (message.content.startsWith(config.prefix + "ping")) { //Answer to a 'ping' command
     message.channel.send("pong!");
   } else
-  if (message.content.startsWith(config.prefix + "foo")) {
+  if (message.content.startsWith(config.prefix + "foo")) { //Answer to a 'foo' command
     message.channel.send("bar!");
   }
 });
