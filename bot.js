@@ -26,4 +26,4 @@ client.on("message", (message) => {
 });
 
 // THIS  MUST  BE  THIS  WAY, pls no touchy-touchy
-client.login(config.token);
+client.login(process.env.config.token);
