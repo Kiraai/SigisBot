@@ -26,7 +26,7 @@ client.on("message", (message) => {
     message.channel.send("bar!");
   } else
   if (message.content.startsWith(config.prefix + "custombuild")) {
-    message.channel.send("you incompetent, useless shit. Go get some proper build first!")
+    message.reply(', you incompetent, useless shit. Go get some proper build first!')
   }
 });
 
