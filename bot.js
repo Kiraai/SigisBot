@@ -12,14 +12,9 @@ client.on("message", (message) => {
   if (command === "ping") {
     message.channel.send("pong!");
   }
+  
   if (command === "foo") {
     message.channel.send("bar!");
-  }
-  if (command === "build") {
-    let klasa = args[0];
-    if (klasa === warrior) {
-    message.channel.send("Hey, &{message.author.username}, these are following builds for warrior:\nBannerslave Berserker: https://qtfy.eu/guildwars/warrior/bannerslave-berserker/ \nwubba lubba dub dub");
-    }
   }
 });
 
