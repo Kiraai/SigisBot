@@ -30,7 +30,7 @@ client.on("message", (message) => {
       message.reply('you incompetent, useless shit. Go get some proper build first!')
   } else
   if (message.content.startsWith(config.prefix + "Patryk")) {
-      message.reply('to super gej.');
+      message.channel.send('to super gej.');
   }
 });
 
