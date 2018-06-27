@@ -28,9 +28,6 @@ client.on("message", (message) => {
   } else
   if (message.content.startsWith(config.prefix + "custombuild")) {
       message.reply('you incompetent, useless shit. Go get some proper build first!')
-  } else
-  if (message.content.startsWith(config.prefix + "Patryk")) {
-      message.channel.send('to super gej.');
   }
 });
 
